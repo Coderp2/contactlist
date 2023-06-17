@@ -28,9 +28,9 @@ const Update = (props) => {
     }
     return (
       <div>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} /> <br /><br />
-        <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} /> <br /><br />
-        <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} /> <br /><br />
+        <input type="text" value={name} placeholder='name...'  onChange={(e) => setName(e.target.value)} /> <br /><br />
+        <input type="number" value={phone} placeholder='phone...' onChange={(e) => setPhone(e.target.value)} /> <br /><br />
+        <input type="text" value={email} placeholder='email...'  onChange={(e) => setEmail(e.target.value)} /> <br /><br />
   
         <button type='button'  class='btn btn-success'   onClick={() => updateUser(1)}>Update</button>
         <button type='button'  class='btn btn-primary'   onClick={()=>navigate(-1)}>Home</button>
